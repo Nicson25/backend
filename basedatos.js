@@ -1,10 +1,10 @@
 const mysql =require("mysql2");
 
 const basedatos = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "NuevaClave25",  // contraseña cuenta
-    database: "maisonsabor"
+    host: process.env.DB_HOST,
+    user: process.env.DB_HOST,
+    password: process.env.DB_PASSWORD,  // contraseña cuenta
+    database: process.env.DB_NAME
 });
 
 basedatos.connect(err =>{
