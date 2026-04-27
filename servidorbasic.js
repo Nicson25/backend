@@ -1,7 +1,7 @@
 const express = require("express");  //inportar librerias y crear servidor
 const cors=require("cors"); //  cors permite contectar el html con el servidor
 const app = express(); //envia y recibes datos
-const PORT=3000;
+const PORT=process.env.PORT || 3000;
 const basedatos = require("./basedatos");  /// servidor conectado a base datos
 const bcrypt = require("bcryptjs");  // encriptacion de contraseñas
 const PDFDocument=require("pdfkit"); // generar PDF
