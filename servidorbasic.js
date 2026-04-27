@@ -451,5 +451,5 @@ app.get("/admin/productos",(req,res)=>{
 
     // iniciar servidor
         app.listen(PORT,()=>{
-        console.log(`Servidor activo en http://localhost:${PORT}`);
+        console.log(`Servidor corriendo en puerto ${PORT}`);
 });
